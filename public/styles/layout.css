@@ -220,6 +220,8 @@ nav form button {
 
 #login {
   width: 80%;
+  color: white;
+  text-decoration: none;
 }
 
 nav button:hover {

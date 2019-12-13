@@ -30,15 +30,21 @@
 <body>
   <nav>
     <!--Back to homepage button-->
-    <button id=BackToHome>Home</button>
-    <button id="Cuisine">Restaurants</button>
-    <button id="Restaurants">Menus</button>
+    <button id="BackToHome" type="button" class="btn btn-default navbar-btn">Home</button>
+    <button id="Cuisine" type="button" class="btn btn-default navbar-btn">Restaurants</button>
+    <button id="Restaurants" type="button" class="btn btn-default navbar-btn">Menus</button>
+    <button id="login" type="button" class="btn btn-default navbar-btn">
+    <a id="login" href="/login">Restaurant Login</a>
+    </button>
+    <!-- <button id=BackToHome>Home</button> -->
+    <!-- <button id="Cuisine">Restaurants</button> -->
+    <!-- <button id="Restaurants">Menus</button> -->
+    <!-- <form method="GET" action="/login">
+      <button id="login" type="button" class="btn btn-default navbar-btn">Restaurant Login</button>
+    </form> -->
     <!-- <form method="GET" action="/orders/:id">
       <button id="YourOrder"> Your Order</button>
     </form> -->
-    <form method="GET" action="/login">
-      <button id="login">Restaurant Login</button>
-    </form>
   </nav>
 
   <!--Homepage(homepage.css and for Checkout button layout.css)-->
