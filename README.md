@@ -47,7 +47,9 @@
 - Node 10.x or above
 - NPM 5.x or above
 - PG 6.x
+- Sass 
+- Twilio
 
 ## Known Bugs & Future Development
 - **Restaurant Login:** Currently, any email and password combination will log you in.
-- **Restaurant Incoming Orders:** Only items ordered from the first restaurant(i.e. Baro) are listed in this section.
+- **Restaurant Incoming Orders:** Only items ordered from the first restaurant (i.e. Baro) are listed in this section.
