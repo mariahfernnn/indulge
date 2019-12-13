@@ -1,147 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 ​
-
-<head>
-  <title>Home Page</title>
-  ​
-  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/cuisine.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/restaurants.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/homepage.css" type="text/css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Cookie|Cormorant+Upright:400,600,700|Fredericka+the+Great|Milonga|Playball|Raleway|Sacramento&display=swap"
-    rel="stylesheet" />
-  ​
-  ​
-  ​
-  ​
-  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
-  <script type="text/javascript" src="/scripts/app.js"></script>
-  <script type="text/javascript" src="/scripts/toggle.js"></script>
-  <script type="text/javascript" src="/scripts/jqueryForSPA.js"></script>
-
-  ​
-</head>
-​
-
-<body>
-  <nav>
-    <!--Back to homepage button-->
-    <button id="BackToHome" type="button" class="btn btn-default navbar-btn">Home</button>
-    <button id="Cuisine" type="button" class="btn btn-default navbar-btn">Restaurants</button>
-    <button id="Restaurants" type="button" class="btn btn-default navbar-btn">Menus</button>
-    <button id="login" type="button" class="btn btn-default navbar-btn">
-    <a id="login" href="/login">Restaurant Login</a>
-    </button>
-    <!-- <button id=BackToHome>Home</button> -->
-    <!-- <button id="Cuisine">Restaurants</button> -->
-    <!-- <button id="Restaurants">Menus</button> -->
-    <!-- <form method="GET" action="/login">
-      <button id="login" type="button" class="btn btn-default navbar-btn">Restaurant Login</button>
-    </form> -->
-    <!-- <form method="GET" action="/orders/:id">
-      <button id="YourOrder"> Your Order</button>
-    </form> -->
-  </nav>
-
-  <!--Homepage(homepage.css and for Checkout button layout.css)-->
-  <div id="homepage">
-    <video autoplay muted loop id="homepageVid">
-      <source src="/videos/coverr-outdoor-lunch.mp4" type="video/mp4">
-    </video>
-    <div class="title">
-      <h1>Indulge</h1>
-      <h2>Five-star dining anywhere.</h2>
-    </div>
-    <!-- <button id="checkout">Checkout</button> -->
+  <head>
+    <title>Home Page</title>
     ​
-  </div>
-  ​
-  <!--Div for Cuisine(cuisine.css)-->
-
-  <div id='food'>
-
-    <h1> Restaurants </h1>
-    <% for (let restaurant of restaurants) { %>
-    <button class="restaurant-select" data-id="<%= restaurant.id %>"><%= restaurant.name %></button>
-    <% }; %>
-  </div>
-  ​
-  <!--Div for restaurants(restaurants.css)-->
-  <div class="restaurants">
-    <% for (let restaurant of restaurants) { %>
-
-
-    <form id="orderForm<%= restaurant.id %>" class="menu" method="POST" action="/api/orders">
-      <h1><%= restaurant.name %></h1>
-      <input type="number" value="<%= restaurant.id %>" name="restaurantId" hidden>
-
-      <div style="display: block; flex-wrap: wrap;">
-        <% menus[`${restaurant.id}`].forEach((menuItem, index) => { %>
-        <!-- <%= JSON.stringify(menuItem) %> -->
-        <h2><%= menuItem.name %></h2>
-        <input name="orderItems[<%= index %>][id]" value="<%= menuItem.id %>" hidden>
-        <input name="orderItems[<%= index %>][price]" value="<%= menuItem.price %>" hidden>
-        <div type="number">
-          <p><%= menuItem.description %></p>
-          <%= menuItem.price %>
-        </div>
-        <input id="qtyButton" name="orderItems[<%= index %>][quantity]" type="number" min="0">
-        <% }); %>
-        <!-- loop through menuITems[rest...] -->
-        <!-- item[price] hidden -->
-        <!-- item[menu_item_id] hidden -->
-      </div>
-      <button type="submit">Order</button>
-    </form>
-    <% } %>
-
-  </div>
-  ​
-  <!--Toggle for check out (homepage.css)-->
-  <!-- <div id="checkoutToggle">
-    <form id="orderForm" method='POST' action="/api/orders">
-      <h1>Your Order</h1>
-      <p>Place holder menu item</p>
-      <button>+</button>
-      <button>-</button>
-      <textarea id="restaurantName" placeholder="Restaurant Name"></textarea>
-      <textarea id="userName" placeholder="User Name"></textarea>
-      <textarea id="itemOrdered" placeholder="item ordered?"></textarea>
-      <textarea id="eachItemQuantity" placeholder="quantity?"></textarea>
-      <textarea id="totalAmount" placeholder="totalAmount?"></textarea>
-      <input type="submit" id="place-order"></input>
-    </form>
-  </div> -->
-
-  <script>
-    $('.restaurant-select').on('click', function () {
-      const id = $(this).attr("data-id");
-      $(".menu").addClass("hidden");
-      $("#orderForm" + id).removeClass("hidden");
-      $('html, body').animate({
-        scrollTop: ($('#orderForm' + id).offset().top - 200)
-      }, 500);
-    })
-  </script>
-
-  <!--
-    <script>
-    // To override form submit
-      const cart = {
-        items: [],
-      }
-
-      $('#orderForm1').on('submit', (event) => {
-        event.preventDefault();
-        console.log('submitting!: ', event);
-      });
-    </script> -->
-  ​
-</body>
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/cuisine.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/restaurants.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/homepage.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie|Cormorant+Upright:400,600,700|Fredericka+the+Great|Milonga|Playball|Raleway|Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    ​
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/toggle.js"></script>
+    <script type="text/javascript" src="/scripts/jqueryForSPA.js"></script>
+  </head>
 ​
 
+  <body>
+    <nav>
+      <!--Back to homepage button-->
+      <button id="BackToHome" type="button" class="btn btn-default navbar-btn">HOME</button>
+      <button id="Cuisine" type="button" class="btn btn-default navbar-btn">RESTAURANTS</button>
+      <button id="Restaurants" type="button" class="btn btn-default navbar-btn">MENUS</button>
+      <button id="login" type="button" class="btn btn-default navbar-btn">
+      <a id="login" href="/login">LOGIN</a>
+      </button>
+    </nav>
+
+    <!--Homepage(homepage.css and for Checkout button layout.css)-->
+    <div id="homepage">
+      <video autoplay muted loop id="homepageVid">
+        <source src="/videos/coverr-outdoor-lunch.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Indulge</h1>
+      </div>
+    </div>
+    ​
+    <!--Div for Cuisine(cuisine.css)-->
+
+    <div id='food'>
+      <h1> Restaurants </h1>
+      <% for (let restaurant of restaurants) { %>
+      <button class="restaurant-select" data-id="<%= restaurant.id %>"><%= restaurant.name %></button>
+      <% }; %>
+    </div>
+    ​
+    <!--Div for restaurants(restaurants.css)-->
+    <div class="restaurants">
+      <% for (let restaurant of restaurants) { %>
+
+      <form id="orderForm<%= restaurant.id %>" class="menu" method="POST" action="/api/orders">
+        <h1><%= restaurant.name %></h1>
+        <input type="number" value="<%= restaurant.id %>" name="restaurantId" hidden>
+
+        <div style="display: block; flex-wrap: wrap;">
+          <% menus[`${restaurant.id}`].forEach((menuItem, index) => { %>
+          <h2><%= menuItem.name %></h2>
+          <input name="orderItems[<%= index %>][id]" value="<%= menuItem.id %>" hidden>
+          <input name="orderItems[<%= index %>][price]" value="<%= menuItem.price %>" hidden>
+          <div type="number">
+            <p><%= menuItem.description %></p>
+            <%= menuItem.price %>
+          </div>
+          <input id="qtyButton" name="orderItems[<%= index %>][quantity]" type="number" min="0">
+          <% }); %>
+        </div>
+        <button type="submit">Order</button>
+      </form>
+      <% } %>
+    </div>
+
+    <script>
+      $('.restaurant-select').on('click', function () {
+        const id = $(this).attr("data-id");
+        $(".menu").addClass("hidden");
+        $("#orderForm" + id).removeClass("hidden");
+        $('html, body').animate({
+          scrollTop: ($('#orderForm' + id).offset().top - 200)
+        }, 500);
+      })
+    </script>
+
+  </body>
 </html>
