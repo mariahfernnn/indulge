@@ -5,39 +5,39 @@
   background-color: white;
   width:90%;
   margin:auto;
-  }
+}
 
- #food h1 {
+#food h1 {
   text-align: center;
-    vertical-align: middle;
-    position: relative;
-    line-height: 40px;
-    top: 30%;
-    font-family: 'Playball', cursive;
-    font-weight: normal;
-    font-size: 500%;
-  }
+  vertical-align: middle;
+  position: relative;
+  line-height: 40px;
+  top: 30%;
+  font-family: 'Playball', cursive;
+  font-weight: normal;
+  font-size: 500%;
+}
 
 //These are the lines across cuisine h1
-  #food h1:before,
+#food h1:before,
 #food h1:after {
-    border-top: 2px solid #000; //controls the thickness of the lines
-    border-bottom: 2px solid #000; // ^ same as this
-    content: "";
-    display: inline-block;
-    height: .25em; // controls how far apart they are
-    position: relative;
-    vertical-align: middle;
-    width: 35%;
-    margin-bottom: .15em;
+  border-top: 2px solid #000; //controls the thickness of the lines
+  border-bottom: 2px solid #000; // ^ same as this
+  content: "";
+  display: inline-block;
+  height: .25em; // controls how far apart they are
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+  margin-bottom: .15em;
 }
 #food h1:before {
-    right: 0.5em;
-    margin-left: -50%;
+  right: 0.5em;
+  margin-left: -50%;
 }
 #food h1:after {
-    left: 0.5em;
-    margin-right: -50%;
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 #food button {
