@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-  <title> Orders </title>
-  <link rel="stylesheet" href="/styles/resOwners.css" type="text/css" />
-  <link
-  href="https://fonts.googleapis.com/css?family=Cookie|Cormorant+Upright:400,600,700|Fredericka+the+Great|Milonga|Playball|Raleway|Sacramento&display=swap"
-  rel="stylesheet" />
+    <title> Orders </title>
+    <link rel="stylesheet" href="/styles/resOwners.css" type="text/css" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Cookie|Cormorant+Upright:400,600,700|Fredericka+the+Great|Milonga|Playball|Raleway|Sacramento&display=swap"
+    rel="stylesheet" />
 
-</head>
+  </head>
 
-<body>
-  <nav>
-    <form action="/" method="GET">
-    <button id="back-to-home">Back To Home</button>
-    </form>
-  </nav>
-  <h1 class="incOrders">Incoming Orders</h1>
-  <div class="incOrdersDiv">
-  <% for (let eachOrder of allOrderInfo) { %>
-   <div> <%= eachOrder.users_name %></div>
-    <!-- <div><%= eachOrder.total_amount %></div> -->
-    <div><%= eachOrder.quantity %>
-    <%= eachOrder.name %></div>
-    <% } %>
-   </div>
-   <a href="/api/sms/orders">Complete Order</a>
+  <body>
+    <nav>
+      <form action="/" method="GET">
+      <button id="back-to-home">Back To Home</button>
+      </form>
+    </nav>
+    <h1 class="incOrders">Incoming Orders</h1>
+    <div class="incOrdersDiv">
+      <% for (let eachOrder of allOrderInfo) { %>
+        <div> <%= eachOrder.users_name %></div>
+        <div>
+          <%= eachOrder.quantity %>
+          <%= eachOrder.name %>
+        </div>
+      <% } %>
+    </div>
+    <a href="/api/sms/orders">Complete Order</a>
 
-</body>
-
-
+  </body>
 </html>
