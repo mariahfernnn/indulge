@@ -1,5 +1,4 @@
 # Indulge
-=========
 
 **Indulge** is a food ordering application for three high-end restaurants around King Street West, which utilizes SMS communication to first notify restaurants of pending orders and then customers once orders are ready to be picked up or delivered.
 
