@@ -1,16 +1,23 @@
-LHL Node Skeleton
+# Indulge
 =========
 
-## Project Setup
+**Indulge** is a food ordering application for three high-end restaurants around King Street West, which utilizes SMS communication to first notify restaurants of pending orders and then customers once orders are ready to be picked up or delivered.
 
-The following steps are only for _one_ of the group members to perform.
+Forked from https://github.com/mariahfernnn/midterm.
 
-1. Create your own copy of this repo using the `Use This Template` button, ideally using the name of your project. The repo should be marked Public
-2. Verify that the skeleton code now shows up in your repo on GitHub, you should be automatically redirected
-3. Clone your copy of the repo to your dev machine
-4. Add your team members as collaborators to the project so that they can push to this repo
-5. Let your team members know the repo URL so that they use the same repo (they should _not_ create a copy/fork of this repo since that will add additional workflow complexity to the project)
+## Screenshots
 
+###### Indulge
+!["Homepage"](url)
+
+###### Restaurants
+!["Restaurants"](url)
+
+###### Menu
+!["The menu items of one restaurant."](url)
+
+###### Restaurant Owner Only - Incoming Orders
+!["Incoming Orders"](url)
 
 ## Getting Started
 
