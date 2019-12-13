@@ -10,7 +10,7 @@
   position: relative;
   line-height: 40px;
   top: 30%;
-  font-family: 'Playball', cursive;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   font-size: 500%;
 }
@@ -18,27 +18,32 @@
 // These are the lines across Restaruants h1 (class restitle)
 .restitle:before,
 .restitle:after {
-    border-top: 2px solid #000; //controls the thickness of the lines
-    border-bottom: 2px solid #000; // ^ same as this
-    content: "";
-    display: inline-block;
-    height: .25em; // controls how far apart they are
-    position: relative;
-    vertical-align: middle;
-    width: 30%;
-    margin-bottom: .15em;
+  border-top: 2px solid #000; //controls the thickness of the lines
+  border-bottom: 2px solid #000; // ^ same as this
+  content: "";
+  display: inline-block;
+  height: .25em; // controls how far apart they are
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+  margin-bottom: .15em;
 }
 .restitle:before {
-    right: 0.5em;
-    margin-left: -50%;
+  right: 0.5em;
+  margin-left: -50%;
 }
 .restitle:after {
-    left: 0.5em;
-    margin-right: -50%;
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .menu {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  font-family: 'Raleway', sans-serif;
+}
+
+#qtyButton {
+  margin-top: 2%;
 }
 
 // Place order button
