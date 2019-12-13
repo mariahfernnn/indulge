@@ -50,5 +50,5 @@ Forked from https://github.com/mariahfernnn/midterm.
 - PG 6.x
 
 ## Known Bugs & Future Development
-* Restaurant Login: Currently, any email and password combination will log you in.
-* Restaurant Incoming Orders: Only items selected from the first restaurant(i.e. Baro) is listed.
+**Restaurant Login:** Currently, any email and password combination will log you in.
+**Restaurant Incoming Orders:** Only items ordered from the first restaurant(i.e. Baro) is listed in this section.
