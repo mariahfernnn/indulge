@@ -45,5 +45,13 @@
 #order {
   border-radius: 12px;
   margin-top: 2%;
+  width: 10%;
   font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  box-shadow: inset 0px 0px 0px white;
+  transition: all 0.5s !important;
+}
+
+#order:hover {
+  box-shadow: inset 150px 0px 0px #2F3B47;
 }
