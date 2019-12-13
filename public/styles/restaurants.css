@@ -42,7 +42,8 @@
   margin-bottom: 10%;
 }
 
-.testingMenuObj h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 300%;
+#order {
+  border-radius: 12px;
+  margin-top: 2%;
+  font-family: 'Raleway', sans-serif;
 }

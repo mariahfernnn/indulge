@@ -100,9 +100,10 @@
   margin-bottom: 10%;
 }
 
-.testingMenuObj h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 300%;
+#order {
+  border-radius: 12px;
+  margin-top: 2%;
+  font-family: 'Raleway', sans-serif;
 }
 
 #homepage {
@@ -189,7 +190,6 @@ nav {
 nav button {
   display: inline-block;
   margin-left: 13%;
-  width: 10%;
   margin-right: 5%;
   height: 50px;
   border-radius: 12px;
@@ -198,6 +198,9 @@ nav button {
   color: white;
   box-shadow: inset 0px 0px 0px white;
   transition: all 0.5s !important;
+  white-space: normal !important;
+  width: 100% !important;
+  font-family: 'Raleway', sans-serif;
 }
 
 nav form button {
