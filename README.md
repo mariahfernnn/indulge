@@ -48,3 +48,7 @@ Forked from https://github.com/mariahfernnn/midterm.
 - Node 10.x or above
 - NPM 5.x or above
 - PG 6.x
+
+## Known Bugs & Future Development
+* Restaurant Login: Currently, any email and password combination will log you in.
+* Restaurant Incoming Orders: Only items selected from the first restaurant(i.e. Baro) is listed.
