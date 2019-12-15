@@ -202,7 +202,6 @@ nav {
 
 nav button {
   display: inline-block;
-  margin-left: 13%;
   margin-right: 5%;
   height: 50px;
   border-radius: 12px;
@@ -228,6 +227,10 @@ nav form button {
   color: white;
   box-shadow: inset 0px 0px 0px white;
   transition: all 0.5s !important;
+}
+
+#BackToHome {
+  margin-left: 5%;
 }
 
 #YourOrder {

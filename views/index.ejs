@@ -23,17 +23,18 @@
 ​
 
   <body>
+
+    <!--Back to homepage button-->
     <nav>
-      <!--Back to homepage button-->
-      <button id="BackToHome" type="button" class="btn btn-default navbar-btn">HOME</button>
-      <button id="Cuisine" type="button" class="btn btn-default navbar-btn">RESTAURANTS</button>
-      <button id="Restaurants" type="button" class="btn btn-default navbar-btn">MENUS</button>
-      <button id="login" type="button" class="btn btn-default navbar-btn">
+      <button id="BackToHome" type="button" class="btn btn-secondary btn-lg">HOME</button>
+      <button id="Cuisine" type="button" class="btn btn-secondary btn-lg">RESTAURANTS</button>
+      <button id="Restaurants" type="button" class="btn btn-secondary btn-lg">MENUS</button>
+      <button id="login" type="button" class="btn btn-secondary btn-lg">
       <a id="login" href="/login">LOGIN</a>
       </button>
     </nav>
 
-    <!--Homepage(homepage.css and for Checkout button layout.css)-->
+    <!-- Homepage(homepage.css and for Checkout button layout.css) -->
     <div id="homepage">
       <video autoplay muted loop id="homepageVid">
         <source src="/videos/coverr-outdoor-lunch.mp4" type="video/mp4">
@@ -44,7 +45,6 @@
     </div>
     ​
     <!--Div for Cuisine(cuisine.css)-->
-
     <div id='food'>
       <h1> Restaurants </h1>
       <% for (let restaurant of restaurants) { %>

@@ -27,8 +27,6 @@ nav {
 
 nav button {
   display: inline-block;
-  margin-left: 13%;
-  // width: 10%;
   margin-right: 5%;
   height: 50px;
   border-radius: 12px;
@@ -40,12 +38,6 @@ nav button {
   white-space: normal !important;
   width: 100% !important;
   font-family: 'Raleway', sans-serif;
-  // word-wrap: break-word;
-  // max-width:100%;
-  // display:inline-block;
-  // white-space:nowrap;
-  // overflow:hidden;
-  // text-overflow:ellipsis;
 }
 
 nav form button {
@@ -60,6 +52,10 @@ nav form button {
   color: white;
   box-shadow: inset 0px 0px 0px white;
   transition: all 0.5s !important;
+}
+
+#BackToHome {
+  margin-left: 5%;
 }
 
 #YourOrder {
