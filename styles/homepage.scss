@@ -24,21 +24,20 @@
 
 video {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  min-width: 100%; 
-  min-height: 100%; 
-  width: 50%; 
+  min-width: 100%;
+  min-height: 100%;
+  width: 50%;
   height: auto;
-  z-index: -1; 
+  z-index: -1;
   overflow: hidden;
 }
 
 .title {
   background-color:rgba(255,255,255, 0.5);
- 
 }
 
 #checkout {
@@ -58,9 +57,4 @@ video {
   bottom: 1px;
   left: 10px;
   display:none;
-
 }
-// #checkoutToggle textarea{
-// display:block;
-
-// }
