@@ -4,6 +4,10 @@
 
 **Forked from https://github.com/mariahfernnn/midterm.**
 
+## Preview
+
+!["Walkthrough"](http://g.recordit.co/NWf2neeuyV.gif)
+
 ## Screenshots
 
 ###### Indulge
