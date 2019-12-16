@@ -6,7 +6,7 @@
 
 ## Preview
 
-!["Walkthrough"](http://g.recordit.co/NWf2neeuyV.gif)
+!["Walkthrough"](indulge.gif)
 
 ## Screenshots
 
