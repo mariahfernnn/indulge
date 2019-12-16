@@ -8,20 +8,6 @@
 
 ![](indulge.gif)
 
-## Screenshots
-
-###### Indulge
-!["Homepage"](url)
-
-###### Restaurants
-!["Restaurants"](url)
-
-###### Menu
-!["The menu items of one restaurant."](url)
-
-###### Restaurant Owner Only - Incoming Orders
-!["Incoming Orders"](url)
-
 ## Getting Started
 
 1. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
