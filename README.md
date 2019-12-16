@@ -6,7 +6,7 @@
 
 ## Preview
 
-!["Walkthrough"](indulge.gif)
+![](indulge.gif)
 
 ## Screenshots
 
